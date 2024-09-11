@@ -1,0 +1,27 @@
+# API Keys
+
+An API key is essentially a unique identifier that allows your application to interact with an API. Think of it as a digital key that grants access to a specific set of resources or functionalities provided by the API.
+
+### Test/Live Keys
+
+To effectively integrate with the Tranzakt Payment Platform (TPP), you'll utilize two primary environments: Test and Live.
+
+Test Mode is designed for developers to experiment with the platform without processing real transactions. This mode allows you to thoroughly test your integration, ensuring seamless functionality before transitioning to live operations.
+
+Live Mode is the production environment where actual transactions are processed. Once your integration is fully tested and validated, you can confidently switch to Live Mode to handle real-world payments.
+
+#### Public Key
+
+Public Keys are essential for identifying your TPP account within your public-facing applications. These keys are securely generated and can be safely included in your frontend code without compromising security. They serve as a crucial component in initiating transactions and interacting with the TPP API.
+
+#### Secret Key
+
+Unlike Public Keys, Secret Keys are intended for secure server-side use. They are vital for authenticating and authorizing requests sent to the TPP API. To maintain the integrity of your integration, it's imperative to keep Secret Keys strictly confidential and avoid exposing them in client-side code
+
+### Callback URL
+
+Callback URL is a designated endpoint on your server that acts as a communication channel between your application and the TPP. TPP sends notifications to this URL regarding critical events such as payment completions, refunds, or chargebacks. By configuring a Callback URL, you can automate responses to these events, enhancing the efficiency of your integration.
+
+### White listing
+
+Callback URL is a designated endpoint on your server that acts as a communication channel between your application and the TPP. TPP sends notifications to this URL regarding critical events such as payment completions, refunds, or chargebacks. By configuring a Callback URL, you can automate responses to these events, enhancing the efficiency of your integration.
